@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes, cord</title>
+
+    <!-- SEO -->
+    <meta name="description" content="YES Cord, 프론트엔드 김예슬입니다">
+    <meta name="keywords" content="김예슬 프론트엔드 개발 6개월과정 html css javascript react frontend developer">
+    <meta property="og:title" content="김예슬" />
+	<meta name="og:description" property="og:description" content=""/>
+	<meta property="og:keywords" content="김예슬 프론트엔드 개발 6개월과정 html css javascript react frontend developer">
+	<meta name="og:type" property="og:type" content="website" />
+	<meta name="og:url" property="og:url" content="http://louteos.dothome.co.kr/myinfo/" />
+	<meta name="og:image" property="og:image" content="img/text2.png" />
+    <script src="https://kit.fontawesome.com/666725dce4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon_white.png" />
+    <link rel="apple-touch-icon" href="img/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/icon.png">
+    <meta name="msapplication-TileImage" content="img/icon.png" size="270x270" />
+    
+    <!-- font -->
+
+    <!-- plug in css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- plug in js -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/info.js"></script>
+
+
+</head>
+<body>
+    <header id="nav" class="fixed-top d-flex justify-content-between align-items-center px-3 px-md-5">
+    <!-- Logo -->
+            <h1 class="col-4 col-sm-3 col-md-2">
+                <a href="#topPage" class="d-block"><img src="img/text1.svg" alt="" class="img-fluid"></a>
+            </h1>
+            <button id="allMenu" class="d-md-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    <!-- Navigation -->
+            <ul class="d1 d-none d-md-flex mb-0">
+                <li><a href="">Intro</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Form</a></li>
+            </ul>
+    </header>
+
+    <section class="wrap">
+        <div>
+    <!-- Section 1 -->
+            <section id="intro" class="slideSection">
+                    <h2>Section 1</h2>
+            </section>
+            
+    <!-- Section 2 -->
+            <section id="about" class="slideSection">
+                <h2>Section 2</h2>
+            </section>
+
+    <!-- Section 3 -->
+            <section id="portfolio" class="slideSection">
+                <h2>Section 3</h2>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </section>
+
+    <!-- Section 4 -->
+            <section id="form" class="slideSection">
+                <h2>Section 4</h2>
+            </section>
+        </div>
+
+    <!-- Quick Menu -->
+    <div id="qm" class="text-center">
+        <a href="#"><i class="fa-regular fa-note-sticky"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="xi-kakaotalk"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+    </footer>
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
