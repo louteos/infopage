@@ -1,10 +1,7 @@
 $(document).ready(function(){
     $('#allMenu').click(function(){
         $(this).toggleClass('open');
-        
     });
-
-    document.getElementsByClassName('open').innerHTML = '<i class="fa-solid fa-xmark"></i>';
 
     $(window).scroll(function(){
         if( $(window).scrollTop() > 0){
@@ -18,7 +15,8 @@ $(document).ready(function(){
         ['Intro', '#intro'],
         ['About me', '#about'],
         ['Portfolio', '#portfolio'],
-        ['Form', '#form']
+        ['Pre-Interview', '#preInterview'],
+        ['Design', '#design']
     ]
 
     let nvli = '';
@@ -35,5 +33,8 @@ $(document).ready(function(){
         e.preventDefault();
         var targetPos = $($(this).attr('href')).offset().top;
         $('body, html').animate({'scrollTop':targetPos});
+
+        $('.depth1 li').removeClass('active')
+        $(this).parent().addClass('active')
     });
 });

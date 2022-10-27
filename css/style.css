@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900');
+
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+
 *{
     list-style: none;
     margin-bottom: 0;
+    font-family: 'Gothic A1', Helvetica, sans-serif ;
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Black Han Sans';
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 700;
 }
 
 a{
@@ -53,6 +69,10 @@ a:hover{
     }
 }
 
+section{
+    min-height: 600px;
+}
+
 #allMenu{
     display: block; position: relative;
     font-size: 2rem;
@@ -90,8 +110,6 @@ a:hover{
 
 
 section {
-    width: auto; height: 700px;
-    background-color: rgb(214, 214, 214);
     margin-bottom: 1rem;
 }
 
@@ -132,7 +150,7 @@ section {
 
 #allMenu.open + .d1{
     display: block !important; position: absolute;
-    background-color: black;
+    background-color: black !important;
     left: 0; right: 0;
     padding: 20px;
     top: 100%;
@@ -166,3 +184,5 @@ section {
     -webkit-align-items: center;
     align-items: center;
   }
+
+
