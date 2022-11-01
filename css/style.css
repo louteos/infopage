@@ -1,95 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900');
-
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
-
-*{
-    list-style: none;
-    margin-bottom: 0;
-    font-family: 'Gothic A1', Helvetica, sans-serif ;
-    font-size: 11pt;
-    font-weight: 400;
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
+* {
+  list-style: none;
+  margin-bottom: 0;
+  font-family: "Gothic A1", "Montserrat";
+  font-size: 14pt;
+  font-weight: 400;
+  color: #181818;
 }
 
-h2{
-    font-family: 'Black Han Sans';
-    font-style: italic;
-    font-weight: 400;
+h2 {
+  font-family: "Black Han Sans";
+  font-style: italic;
+  font-weight: 400;
+  color: #5cbbe4;
 }
 
-h3{
-    font-weight: 700;
+h5 {
+  font-weight: 600;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-a:hover{
-    text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 
-#nav{
-    left: 0; right: 0;
-    z-index: 10;
-    background-color: transparent;
+#nav {
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+#nav a img {
+  height: 100%;
+  background-color: transparent;
+}
+
+#nav .d1 {
+  display: flex;
+}
+
+#nav li {
+  position: relative;
+  margin: 0 1rem;
+}
+
+#nav ul li a {
+  font-family: "Gothic A1";
+  font-size: 16pt;
+  font-weight: 600;
+  color: #181818;
+}
+
+@media (min-width: 720px) {
+  #nav li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: auto;
+    bottom: 0;
+    height: 2px;
     transition: 0.5s;
-}
-
-#nav a img{
-    height: 150%;
-    background-color: transparent;
-}
-
-#nav .d1{
-    display: flex;
-}
-
-#nav li{
-    position: relative;
-    margin: 0 1rem;
-}
-
-@media(min-width: 720px){
-    #nav li a::after{
-        content: "";
-        display: block; position: absolute;
-        left: 0; right: 0; width: 0; margin: auto;
-        bottom: 0; height: 2px;
-        transition: 0.5s;
-        background-color: rgb(137, 44, 243);
-    }
-
-    #nav li a:hover{
-        color: white;
-        text-decoration: none;
-    }
-
-    #nav a:hover::after{
-        width: 100%;
-    }
-}
-
-.scroll #nav{
-    background-color: #2e2e2e;
-}
-
-.scroll .logo{
-    filter: invert(100%) sepia(5%) saturate(24%) hue-rotate(251deg) brightness(106%) contrast(100%);
-}
-
-section{
-    min-height: 600px;
-}
-
-#allMenu{
-    display: block; position: relative;
-    font-size: 2rem;
+    background-color: #8758ff;
+  }
+  #nav li a:hover {
     color: white;
-    margin-right: 20px;
-    background-color: transparent;
-    border: 0; padding: 0;
+    text-decoration: none;
+  }
+  #nav a:hover::after {
+    width: 100%;
+  }
 }
+.scroll #nav {
+  background-color: rgba(135, 88, 255, 0.8274509804);
+}
+
+.scroll .logo {
+  filter: invert(100%) sepia(5%) saturate(24%) hue-rotate(251deg) brightness(106%) contrast(100%);
+}
+
+section {
+  min-height: 600px;
+  padding-top: 90px;
+}
+
+#allMenu {
+  display: block;
+  position: relative;
+  font-size: 2rem;
+  margin-right: 20px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+#allMenu i {
+  font-size: 1.8rem;
+}
+
+.scroll #nav #allMenu i {
+  color: white;
+}
+
 /* 
 #allMenu span{
     display: block;
@@ -115,35 +137,54 @@ section{
 
 #allMenu::before{
     top: 0;
-} */ 
-
-
-section {
-    margin-bottom: 1rem;
+} */
+#design {
+  background-color: gray;
 }
 
-#intro{
-    background-image: url('https://wallpaper.dog/large/20459082.jpg');
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
+#intro {
+  background-color: #8758ff;
+  background-size: 100vw auto;
 }
 
-#qm{
-    display: block; position: fixed;
-    right: 25px; bottom: 15px;
-    z-index: 8;
+#btn {
+  border: #181818;
+  background-color: white;
+  color: #181818;
 }
 
-#qm i{
-    display: block;
-    align-items: center; justify-content: center;
-    padding: 7px;
-    margin-bottom: 7px;
-    font-size: 1.7rem;
-    color: rgb(137, 44, 243);
-    background-color: rgb(243, 243, 243);
-    border-radius: 50%;
+#preInterview dl dd {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
+
+#qm {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  z-index: 8;
+}
+
+#qm i {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  margin-bottom: 7px;
+  font-size: 1.7rem;
+  color: #8758ff;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+#qm i:hover {
+  color: #f2f2f2;
+  background-color: #8758ff;
+}
+
 /* 
 #allMenu.open span{
     display: none;
@@ -156,42 +197,32 @@ section {
 #allMenu.open::before{
     transform: rotate(45deg);
 } */
-
-#allMenu.open + .d1{
-    display: block !important; position: absolute;
-    background-color: black !important;
-    left: 0; right: 0;
-    padding: 20px;
-    top: 100%;
+#allMenu.open + .d1 {
+  display: block !important;
+  position: absolute;
+  background-color: black !important;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  top: 100%;
+  transition: 0.5s;
 }
 
-#allMenu.open + .d1 a{
-    color: white;
+#allMenu.open + .d1 a {
+  color: white;
 }
 
 .swiper {
-    width: 100%;
-    height: 30%;
-  }
+  width: 60%;
+  height: 30vh;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #181818;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

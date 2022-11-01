@@ -1,4 +1,17 @@
 $(document).ready(function(){
+    const nvDB = [
+        ['안녕하세요', '#intro'],
+        ['작업물', '#portfolio'],
+        ['사전인터뷰', '#preInterview'],
+        ['디자인', '#design']
+    ]
+
+    let nvli = '';
+    for(let i in nvDB){
+        nvli += `<li><a href="${nvDB[i][1]}">${nvDB[i][0]}</a></li>`
+    }
+    $('.d1').html(nvli);
+
     $('#allMenu').click(function(){
         $(this).toggleClass('open');
     });
@@ -11,21 +24,8 @@ $(document).ready(function(){
         }
     });
 
-    const nvDB = [
-        ['Intro', '#intro'],
-        ['About me', '#about'],
-        ['Portfolio', '#portfolio'],
-        ['Pre-Interview', '#preInterview'],
-        ['Design', '#design']
-    ]
 
-    let nvli = '';
-    for(let i in nvDB){
-        nvli += `<li><a href="${nvDB[i][1]}">${nvDB[i][0]}</a></li>`
-    }
-    $('.d1').html(nvli);
-
-    $('.slideSection').each(function(){
+    $('.slideSection:not(#intro)').each(function(){
         $(this).find('h2').html(nvDB[$(this).index()][0])
     })
 
@@ -37,4 +37,14 @@ $(document).ready(function(){
         $('.depth1 li').removeClass('active')
         $(this).parent().addClass('active')
     });
+
+    $('#preInterview dt').click(function(){
+        $(this).toggleClass('act')
+        $(this).removeClass('act')
+    })
+
+    $('#qm').click(function (){
+        $(this).addClass('more')
+    })
+
 });
