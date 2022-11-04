@@ -26,14 +26,14 @@
     
     <!-- font -->
 
-    <!-- plug in css -->
+    <!-- plugin css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 
-    <!-- plug in js -->
+    <!-- plugin js -->
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -41,99 +41,163 @@
 
 
 </head>
-<body>
-    <header id="nav" class="fixed-top d-flex justify-content-between align-items-center py-3 px-3 px-md-5">
+<body id="top">
+  <header id="nav" class="fixed-top d-flex justify-content-between align-items-center py-1 py-md-3 px-3 px-md-5">
     <!-- Logo -->
-            <h1 class="col-4 col-sm-3 col-md-2 pb-0 m-0">
-                <a href="#topPage" class="d-block"><img src="img/lo_fill.png" alt="" class="logo img-fluid"></a>
-            </h1>
-            <button id="allMenu" class="d-md-none">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <h1 class="col-4 col-sm-3 col-md-2 pb-0 m-0">
+      <a href="#" class="d-block"><img src="img/lo_fill.png" alt="로고" class="logo img-fluid"></a>
+    </h1>
+    <button id="allMenu" class="d-md-none m-0">
+      <i class="fa-solid fa-bars"></i>
+    </button>
     <!-- Navigation -->
-            <ul class="d1 d-none d-md-flex mb-0 text-center">
-                <li><a href="">Intro</a></li>
-                <li><a href="">About me</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Pre-Interview</a></li>
-            </ul>
-    </header>
+    <ul class="d1 d-none d-md-flex mb-0 text-center">
+      <li><a href="">Intro</a></li>
+      <li><a href="">About me</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Pre-Interview</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </header>
 
-    <section class="wrap">
-        <div>
-            <!-- Section 1 -->
-            <section id="intro" class="slideSection">
-              <h2 class="sr-only">Section 1</h2>
-            </section>
-            
-            <!-- Section 2 -->
-            <section id="portfolio" class="slideSection">
-              <h2 class="text-center">Section 2</h2>
-
-              <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+  <section class="wrap">
+      <!-- Section 1 -->
+      <section id="intro" class="slideSection">
+        <h2 class="sr-only">안녕하세요</h2>
+      </section>
+          
+      <!-- Section 2 -->
+      <section id="portfolio" class="slideSection">
+        <div class="container">
+          <h2 class="text-center">Portfolio</h2></li>
+          <div class="row">
+            <div class="col-12 col-md-4 order-2 content-fluid">
+              <h5 class="text-right">Splatoon!3</h5></li>
+              <ul class="d-flex">
+                <li class="col-6">
+                  <span>#웹사이트</span>
+                  <span>UI/UX기획설계</span>
+                  <span>bootstrap</span>
+                  <span>반응형웹</span>
+                </li>
+                <li class="col-6">
+                  <span>제작기간: 2일</span>
+                  <a href=""><span>제작노트</span></a>
+                  <a href=""><span>GitHub</span></a>
+                </li>
+              </ul>
+            </div>                 
+            <div class="swiper mySwiper col-md-8 order-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/sp.png" alt="작업물1"  class="img-fluid"></div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
                 </div>
-          </section>
-
-            <!-- Section 3 -->
-            <section id="preInterview" class="slideSection container">
-              <h2 class="d-flex justify-content-center align-items-center pb-3">Section 3
-                <button id="btn">▼</button>
-              </h2>
-
-              <dl class="faq container px-0">
-                  <dt class="text-left">
-                    <h5>Q. 전공과 다른 직무로 오게 된 이유가 무엇인가요?</h5>
-                  </dt>
-                  <dd class="bg-light">내용<br>내용<br>내용<br></dd>
-                  <dt class="text-left">
-                    <h5>Q. 수료과정에서 힘든 부분은 무엇이었으며, 그를 어떻게 해낼 수 있었나요?</h5>
-                  </dt>
-                  <dd class="bg-light">내용<br>내용<br>내용<br></dd>
-                  <dt class="text-left">
-                    <h5>Q. 본인의 강점과 약점은 무엇인가요?</h5>
-                  </dt>
-                  <dd class="bg-light">내용<br>내용<br>내용<br></dd>
-                  <dt class="text-left">
-                    <h5>Q. 목표가 무엇인가요? 5년 후 자신의 모습은 어떨 것 같나요?</h5>
-                  </dt>
-                  <dd class="bg-light">내용<br>내용<br>내용<br></dd>
-                  <dt class="text-left">
-          </section>
-
-              <!-- Section 4 -->
-              <section id="design" class="slideSection">
-                <h2 class="text-center">Section 4</h2>
-                <pre>
-                colors
-                #181818
-                #8758ff
-                #5cbbe4
-                #f2f2f2
-                </pre>
-              </section>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-          </section>
-            
+          </div>
+        </div>
+      </section>
 
-    <!-- Quick Menu -->
-    <div id="qm" class="text-center">
+      <!-- Section 3 -->
+      <section id="preInterview" class="slideSection container">
+        <h2 class="text-center">Pre-Interview</h2>
+        <img src="img/discord_pc_01.png" alt="" class="img-fluid show">
+        <img src="img/discord_pc_02.png" alt="" class="img-fluid">
+        <img src="img/discord_pc_03.png" alt="" class="img-fluid">
+        <img src="img/discord_pc_04.png" alt="" class="img-fluid">
+      </section>
+
+      <!-- Section 4 -->
+      <section id="design" class="slideSection">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2 class="text-center">Identity</h2>
+              <img src="img/lo_fill_grid.png" alt="" class="img-fluid">
+              <hr>
+              <p>
+                널리 사용되는 VoIP 소프트웨어 디스코드에서 착안했습니다.<br>
+                불협화음이라는 의미를 가진 Discord와 반대로 협업과정에서의
+                화음을 맞추겠다는 의미에서 Yescord로 명명하였으며,<br>
+                이는 개발자의 이름을 딴 후보군이었던  Yes(eul)code와
+                동음이의 또한 담겨있습니다.
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <h2 class="text-center">Color System</h2>
+              <img src="img/color.png" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+      </section>
+
+  
+  <!-- Footer -->
+  <section id="contact">
+    <div class="container wow fadeIn">
+        <div class="row text-center">
+
+            <div class="col-12 col-md-6">
+              <h2>Contact</h2>
+              <p>메세지를 남길 수 있습니다</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <form name="sentMessage" id="" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-12 col-md-6 floating-label-form-group controls">
+                            <label>Name</label>
+                            <input type="text" class="form-control text-center" placeholder="Name" id="sirial" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-12 col-md-6 floating-label-form-group controls">
+                            <label>E-mail</label>
+                            <input type="text" class="form-control text-center" placeholder="E-mail" id="sirial" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-12 col-md-6 floating-label-form-group controls">
+                            <label>Phone</label>
+                            <input type="text" class="form-control text-center" placeholder="Phone" id="sirial" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-12 col-md-6 floating-label-form-group controls">
+                            <label>Message</label>
+                            <input type="text" class="form-control text-center" placeholder="남기실 말씀" id="sirial" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                          </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                          <div class="form-group">
+                              <button type="submit" class="btn btn-outline-dark">Send</button>
+                          </div>
+                      </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-8 col-lg-offset-2">
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+            
+  <!-- Quick Menu -->
+  <div id="qm" class="text-center">
+      <div class="more">
         <a href="#"><i class="fa-regular fa-note-sticky" title="Notion 바로가기"></i></a>
         <a href="#"><i class="fa-brands fa-github" title="Github 바로가기"></i></a>
-        <a href="#"><i class="xi-kakaotalk" title="카카오톡 문의"></i></a>
+        <a href="#top"><i class="fa-solid fa-arrow-up" title="페이지 상단으로"></i></a>
       </div>
-    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-    </footer>
 
 
     <script>

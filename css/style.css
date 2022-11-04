@@ -8,6 +8,16 @@
   font-size: 14pt;
   font-weight: 400;
   color: #181818;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h2 {
@@ -21,15 +31,6 @@ h5 {
   font-weight: 600;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 #nav {
   left: 0;
   right: 0;
@@ -39,7 +40,7 @@ a:hover {
 }
 
 #nav a img {
-  height: 100%;
+  width: 100%;
   background-color: transparent;
 }
 
@@ -54,50 +55,23 @@ a:hover {
 
 #nav ul li a {
   font-family: "Gothic A1";
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 600;
   color: #181818;
 }
 
-@media (min-width: 720px) {
-  #nav li a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 0;
-    margin: auto;
-    bottom: 0;
-    height: 2px;
-    transition: 0.5s;
-    background-color: #8758ff;
-  }
-  #nav li a:hover {
-    color: white;
-    text-decoration: none;
-  }
-  #nav a:hover::after {
-    width: 100%;
-  }
-}
 .scroll #nav {
-  background-color: rgba(135, 88, 255, 0.8274509804);
+  background-color: rgba(255, 255, 255, 0.8274509804);
 }
 
 .scroll .logo {
-  filter: invert(100%) sepia(5%) saturate(24%) hue-rotate(251deg) brightness(106%) contrast(100%);
-}
-
-section {
-  min-height: 600px;
-  padding-top: 90px;
+  filter: invert(45%) sepia(65%) saturate(4766%) hue-rotate(237deg) brightness(99%) contrast(105%);
 }
 
 #allMenu {
   display: block;
   position: relative;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-right: 20px;
   background-color: transparent;
   border: 0;
@@ -105,46 +79,16 @@ section {
 }
 
 #allMenu i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .scroll #nav #allMenu i {
   color: white;
 }
 
-/* 
-#allMenu span{
-    display: block;
-    height: 2px;
-    background-color: gray;
-    margin: 11px 0;
-}
-
-#allMenu::after,
-#allMenu::before{
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    background-color: gray;
-    left: 0;
-    width: 100%;
-}
-
-#allMenu::after{
-    bottom: 0;
-}
-
-#allMenu::before{
-    top: 0;
-} */
-#design {
-  background-color: gray;
-}
-
 #intro {
   background-color: #8758ff;
-  background-size: 100vw auto;
+  height: 600px;
 }
 
 #btn {
@@ -160,11 +104,16 @@ section {
   transition: 0.5s;
 }
 
+#contact {
+  position: relative;
+  align-items: center;
+}
+
 #qm {
   display: block;
   position: fixed;
-  right: 10px;
-  bottom: 5px;
+  right: 20px;
+  bottom: 15px;
   z-index: 8;
 }
 
@@ -174,29 +123,17 @@ section {
   justify-content: center;
   padding: 7px;
   margin-bottom: 7px;
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: #8758ff;
   background-color: #f2f2f2;
   border-radius: 50%;
 }
 
-#qm i:hover {
+#qm .more i:hover {
   color: #f2f2f2;
   background-color: #8758ff;
 }
 
-/* 
-#allMenu.open span{
-    display: none;
-}
-
-#allMenu.open::after{
-    transform: rotate(-45deg);
-}
-
-#allMenu.open::before{
-    transform: rotate(45deg);
-} */
 #allMenu.open + .d1 {
   display: block !important;
   position: absolute;
@@ -213,8 +150,8 @@ section {
 }
 
 .swiper {
-  width: 60%;
-  height: 30vh;
+  width: 100%;
+  height: auto;
 }
 
 .swiper-slide {
@@ -225,4 +162,37 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 720px) {
+  #nav li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: auto;
+    bottom: 0;
+    height: 2px;
+    transition: 0.5s;
+    background-color: #8758ff;
+  }
+  #nav a:hover::after {
+    width: 100%;
+  }
+  #nav a img {
+    width: 80%;
+  }
+  #qm i {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 7px;
+    font-size: 1.7rem;
+    color: #8758ff;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
 }
